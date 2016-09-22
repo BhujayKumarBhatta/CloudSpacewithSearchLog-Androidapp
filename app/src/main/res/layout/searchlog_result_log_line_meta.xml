@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"  >
+
+    <!--
+android:onClick="onCheckboxClicked"
+    -->
+    <!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <TextView
+        android:id="@+id/vwid_result_logline_row_meta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="1dp"
+        android:gravity="top"
+        android:text=" Server Host  Name"
+        android:textSize="12dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorLime"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:singleLine="false"
+
+        android:scrollIndicators="right"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Checkbox1"
+        android:layout_toEndOf="@+id/Checkbox1_resultserver"
+        />
+
+</LinearLayout>
+
+
+

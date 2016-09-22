@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorIndigo"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#e8e8e7"
+            android:orientation="horizontal">
+
+            <ImageView android:layout_width="40dp"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/lotusnotesicon"
+                       android:layout_marginLeft="10dp"
+                       tools:ignore="ContentDescription"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Company mail Registration"
+                      android:textColor="#2582C5"
+                      android:layout_marginLeft="25dp"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:layout_gravity="center_horizontal|center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+               <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="16dp"
+                                  android:layout_marginTop="16dp"
+                                  android:layout_marginRight="16dp"
+                                  android:layout_marginBottom="35dp"
+                                  android:orientation="vertical" >
+
+                            <EditText android:layout_width="fill_parent"
+                                      android:id="@+id/vwLNfirstname"
+                                      android:layout_height="35dp"
+                                      android:hint="First Name"
+                                      android:background="#f3f3f3"
+                                      android:paddingLeft="5dp"
+                                      android:layout_marginTop="10dp"/>
+
+                            <EditText android:layout_width="fill_parent"
+                                      android:id="@+id/vwLNmiddlename"
+                                      android:layout_height="35dp"
+                                      android:hint="Middle Name"
+                                      android:background="#f3f3f3"
+                                      android:paddingLeft="5dp"
+                                      android:layout_marginTop="10dp"/>
+
+                            <EditText android:layout_width="fill_parent"
+                                      android:id="@+id/vwLNlastname"
+                                      android:layout_height="35dp"
+                                      android:hint="Last Name , must have"
+                                      android:background="#f3f3f3"
+                                      android:paddingLeft="5dp"
+                                      android:layout_marginTop="10dp"/>
+
+                            <EditText android:layout_width="fill_parent"
+                                      android:id="@+id/vwLNmobile"
+                                      android:layout_height="35dp"
+                                      android:hint="mobile"
+                                      android:inputType="phone"
+                                      android:background="#f3f3f3"
+                                      android:paddingLeft="5dp"
+                                      android:layout_marginTop="10dp"/>
+
+                            <EditText android:layout_width="fill_parent"
+                                      android:id="@+id/vwLNempid"
+                                      android:layout_height="35dp"
+                                      android:inputType="number"
+                                      android:hint="employee id ,  must have"
+                                      android:background="#f3f3f3"
+                                      android:paddingLeft="5dp"
+                                      android:layout_marginTop="10dp"/>
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="40dp"
+                                          android:layout_marginTop="10dp"
+                                          android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:paddingRight="10dp"
+                                        android:text="Choose a Registration Policy :"
+                                        android:background="#f3f3f3"/>
+
+                                    <Spinner android:layout_width="50dp"
+                                             android:id="@+id/vwidLNconID"
+                                             android:layout_height="35dp"
+                                             android:layout_marginLeft="30dp"
+                                             android:hint="Division , must have"
+                                             android:background="#f3f3f3"
+                                             android:paddingLeft="5dp"/>
+                            </LinearLayout>
+
+                            <TextView android:layout_width="fill_parent"
+                                      android:id="@+id/vwidLNCondetails"
+                                      android:layout_height="50dp"
+                                      android:hint="Policy Description"
+                                      android:background="#f3f3f3"
+                                      android:paddingLeft="5dp"
+                                      android:layout_marginTop="10dp"/>
+
+                        <Button android:layout_width="190dp"
+                                android:layout_height="38dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="16dp"
+                                android:text="submit"
+                                android:onClick="LNregistrationCall"
+                                android:textColor="#fff"
+                                android:background="@drawable/btn"/>
+                    </LinearLayout>
+                </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+<!--android:background="@drawable/greybackground"-->

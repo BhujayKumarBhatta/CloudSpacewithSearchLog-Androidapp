@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorIndigo"
+    >
+
+
+    <TextView
+        android:id="@+id/divappcountDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:gravity="top"
+        android:text="Division Subdivision"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/divappcountApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="000 apps"
+        android:textSize="18dp"
+        android:textColor="@color/colorYellow1"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/divappcountHosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="0000 hosts"
+        android:textSize="15dp"
+        android:textColor="@color/colorlightGreen2"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divappcountApp"
+        />
+    <TextView
+        android:id="@+id/divappcountCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:gravity="bottom"
+        android:text="000 cpu"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkOrange"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divappcountHosts"
+        />
+    <TextView
+        android:id="@+id/divappcountStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:gravity="bottom"
+        android:text="000 storage"
+        android:textSize="15dp"
+        android:textColor="@color/colorLime"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divappcountCpu"
+        />
+</RelativeLayout>
+
+
+

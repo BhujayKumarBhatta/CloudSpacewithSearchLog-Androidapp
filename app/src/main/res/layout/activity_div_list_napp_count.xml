@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+        <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true">
+
+                                        <ListView
+                                            android:id="@+id/dinnapplistview1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1.0">
+                                        </ListView>
+
+                        <ProgressBar
+                                                android:id="@+id/progressBar"
+                                                android:minHeight="20dip"
+                                                android:maxHeight="20dip"
+                                                android:layout_gravity="bottom"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                                />
+
+                     </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+<!--    style="@android:style/Widget.DeviceDefault.ProgressBar.Large" -->
+
+
+
+<!--LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    tools:context="activities.android.theopentutorials.com.cloudspace.DivListNappCountActivity">
+
+
+    <ListView
+        android:id="@+id/dinnapplistview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+    </ListView>
+
+
+</LinearLayout-->
+
+

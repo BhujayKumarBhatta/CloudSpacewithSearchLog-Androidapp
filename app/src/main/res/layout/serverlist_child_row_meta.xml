@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorIndigo"  >
+
+
+    <CheckedTextView
+
+        android:id="@+id/txtvWSrvName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:gravity="top"
+        android:text=" Server Host  Name"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtvWIPaddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="10.10.10.100"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkViolet"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtvWSrvName"
+        />
+    <TextView
+        android:id="@+id/txtvwNAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="NAT"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkViolet"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtvWIPaddr"
+        />
+    <TextView
+        android:id="@+id/txtvwenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="Env"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkViolet"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtvwNAT"
+        />
+
+    <TextView
+        android:id="@+id/txtVwCPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="000 hosts"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkPink"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/txtVwRAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="000 cpu"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkGreen2"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtVwCPU"
+        />
+    <TextView
+        android:id="@+id/txtVwStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:gravity="bottom"
+        android:text="0000 GB Storag"
+        android:textSize="15dp"
+        android:textColor="@color/colorLime"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtVwRAM"
+        />
+</RelativeLayout>
+
+
+

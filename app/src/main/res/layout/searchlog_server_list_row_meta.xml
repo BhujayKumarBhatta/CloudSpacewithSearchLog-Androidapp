@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorIndigo"  >
+
+
+    <CheckBox
+        android:id="@+id/Checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="1dp"
+        android:gravity="top"
+        android:text="c"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <!--
+android:onClick="onCheckboxClicked"
+    -->
+    <!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <TextView
+        android:id="@+id/txtvWSrvNameDJ"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="1dp"
+        android:gravity="top"
+        android:text=" Server Host  Name"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Checkbox1"
+        android:layout_toEndOf="@+id/Checkbox1"
+        />
+    <TextView
+        android:id="@+id/txtvWIPaddrDJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:gravity="bottom"
+        android:text="10.10.10.100"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkViolet"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtvWSrvNameDJ"
+        />
+    <TextView
+        android:id="@+id/txtvwSSHDJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="SSHPORT"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkViolet"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtVwOSIDDJ"
+        />
+
+
+    <TextView
+        android:id="@+id/txtVwSRVIDDJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="ID"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkPink"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/txtVwOSIDDJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="OS ID"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkGreen2"
+        android:background="@color/colorIndigo"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtVwSRVIDDJ"
+        />
+
+</LinearLayout>
+
+
+

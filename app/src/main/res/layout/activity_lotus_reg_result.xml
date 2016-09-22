@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="activities.android.theopentutorials.com.cloudspace.LotusRegResultActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vwidLNRegStatHeading"
+        android:text="Registration Status "
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentTop="true"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vwidLNGreetings"
+        android:text="Something wrong with coding..."
+        android:layout_below="@+id/vwidLNRegStatHeading"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vwidLNdisplayName"
+        android:text=" LN Display Name : "
+        android:textSize="15dp"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@+id/vwidLNGreetings"
+        android:layout_alignParentLeft="true"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vwidLNnameValue"
+        android:layout_marginBottom="6dp"
+        android:text="  "
+        android:textSize="15dp"
+        android:layout_below="@+id/vwidLNGreetings"
+        android:layout_alignRight="@+id/vwidLNdisplayName"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vwidEmailaddrsss"
+        android:layout_marginBottom="6dp"
+        android:text=" E_Mail Address: "
+        android:textSize="15dp"
+        android:layout_below="@+id/vwidLNnameValue"
+        android:layout_alignParentLeft="true"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/vwidEmailaddrsssValue"
+        android:text="   "
+        android:textSize="15dp"
+        android:layout_below="@+id/vwidLNnameValue"
+        android:layout_alignRight="@+id/vwidEmailaddrsss"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/vwidLNnextAction"
+        android:text=" Next Action Needed "
+        android:textSize="15dp"
+        android:layout_below="@+id/vwidEmailaddrsssValue"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:id="@+id/vwidLNwebLink"
+        android:text=" http://mail server "
+        android:textSize="15dp"
+        android:layout_below="@+id/vwidLNnextAction"
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail Log of the registration"
+        android:layout_marginBottom="6dp"
+        android:layout_above="@+id/vwLNlog"/>
+    <LinearLayout
+        android:id="@+id/vwLNlog"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:id="@+id/vwLotusRegResult"
+            android:text="Result of the Registration"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" />
+    </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

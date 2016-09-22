@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+                android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+                     <TextView
+                        android:id="@+id/label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:textSize="16dip"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:background="@color/colorBlack"
+                         android:text="Actual Value">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/label1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:textSize="16dip"
+                        android:textStyle="bold"
+                        android:text="Swimmers Name"
+                        android:textColor="@color/colorAccent"
+                        android:background="@color/colorWhite"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/label"/>
+
+                    <TextView
+                        android:id="@+id/labelAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:textSize="16dip"
+                        android:textStyle="bold"
+                        android:text="Age"
+                        android:textColor="@color/colorAccent"
+                        android:background="@color/colorWhite"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/label">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/label3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:textSize="16dip"
+                        android:textStyle="bold"
+                        android:text="Best Record"
+                        android:textColor="@color/colorAccent"
+                        android:background="@color/colorWhite"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/label">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/thirdLineLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:textSize="16dip"
+                        android:textStyle="bold"
+                        android:text="Third Line"
+                        android:textColor="@color/colorAccent"
+                        android:background="@color/colorWhite"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/labelAge">
+                    </TextView>
+
+
+
+
+</RelativeLayout>

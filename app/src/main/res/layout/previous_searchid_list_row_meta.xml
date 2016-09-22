@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      >
+
+    <!--
+android:onClick="onCheckboxClicked"
+    -->
+    <!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <TextView
+        android:id="@+id/vwid_prev_searchid"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="1dp"
+        android:gravity="top"
+        android:text=" Search ID"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorLime"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Checkbox1"
+        android:layout_toEndOf="@+id/Checkbox1_resultserver"
+        />
+    <TextView
+        android:id="@+id/vwid_prev_searchby"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:text="Searched BY"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkGreen2"
+        android:background="@color/colorLime"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/vwid_prev_searchid"
+        />
+    <TextView
+        android:id="@+id/vwid_prev_search_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:text="Search time"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkViolet"
+        android:background="@color/colorLime"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/vwid_prev_searchby"
+        />
+
+
+    <TextView
+        android:id="@+id/vwid_prev_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="created"
+        android:textSize="15dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorLime"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+
+
+

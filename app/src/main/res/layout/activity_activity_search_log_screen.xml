@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activities.android.theopentutorials.com.cloudspace.DivtoAppActivity">
+    <ListView
+        android:id="@+id/search_server_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidStartDate"
+            android:hint="StartDate"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidStartHour"
+            android:hint="StartHour"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/vwidStartDate"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidStartMinute"
+            android:hint="StartMinute"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/vwidStartHour"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidStartSecond"
+            android:hint="StartSecond"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"/>
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:id="@+id/vwidEndDate"
+            android:hint="EndDate"
+            android:textSize="15dp"
+            android:layout_below="@id/vwidStartDate"
+            android:layout_alignParentLeft="true"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:id="@+id/vwidEndHour"
+            android:hint="EndHour"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/vwidEndDate"
+            android:layout_below="@id/vwidStartHour"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidEndMinute"
+            android:hint="EndMinute"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/vwidEndHour"
+            android:layout_below="@id/vwidStartMinute"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidEndSecond"
+            android:hint="EndSecond"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/vwidStartSecond"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidStartMonth"
+            android:hint="Month"
+            android:textSize="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/vwidEndDate"
+            android:layout_marginRight="50dp"
+            />
+        <Button
+            android:id="@+id/findSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/vwidEndSecond"
+            style="?android:attr/borderlessButtonStyle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vwidJob_ID_Msg"
+            android:hint="Click here once Job ID is shown after Submit "
+            android:textSize="15dp"
+            android:textColor="@color/colorDarkViolet"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/vwidStartMonth"
+            android:onClick="gotoGetServerbyJobid"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+    <!--TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/divtoappMaintestText"
+    android:text="Kiran"
+    android:textSize="70dp"/-->

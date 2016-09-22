@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009999"
+    >
+
+
+<CheckedTextView
+
+    android:id="@+id/textViewGroupName"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:paddingLeft="5dp"
+    android:gravity="top"
+    android:text="DC Hall Name"
+    android:textSize="22dp"
+    android:textColor="#FFFFFF"
+    android:background="#009999"
+    android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewGroupRacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="000 racks"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkPink"
+       android:background="#009999"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewGroupUSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:text="0000 U"
+        android:textSize="15dp"
+        android:textColor="@color/colorDarkGreen2"
+        android:background="#009999"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewGroupRacks"
+        />
+    <TextView
+        android:id="@+id/textViewGroupPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:gravity="bottom"
+        android:text="000 kw"
+        android:textSize="15dp"
+        android:textColor="@color/colorLime"
+        android:background="#009999"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewGroupUSpace"
+        />
+    </RelativeLayout>
+
+
+
